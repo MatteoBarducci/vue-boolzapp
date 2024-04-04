@@ -76,7 +76,7 @@ main{
 }
 
 .chat{
-    background-image: url("https://w0.peakpx.com/wallpaper/744/548/HD-wallpaper-whatsapp-ma-doodle-pattern-thumbnail.jpg");
+    background-image: url("../img/mine.jpg");
     height: calc(100% - 142px);
     overflow-y: auto;
 }
@@ -108,7 +108,7 @@ nav{
 }
 
 .blue-banner{
-    height: 7%;
+    height: 15%;
     width: 100vw;
     background-color: #0F9688;
     position: absolute;
