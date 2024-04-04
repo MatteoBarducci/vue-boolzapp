@@ -1,0 +1,102 @@
+/*------------
+RESET
+-------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*------------
+GENERAL
+-------------*/
+body{
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+}
+
+.main-container{
+    display: flex;
+    width: 80vw;
+    height: calc(100vh - 50px);
+    margin: 25px auto 25px;
+    position: relative;
+}
+
+aside{
+    width: 35%;
+    background-color: aqua;
+    height: 100%;
+}
+
+main{
+    width: 65%;
+    height: 100%;
+    background-color: bisque;
+}
+
+.aside-header, header{
+    height: 72px;
+    background-color: #EAEAEA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aside-header i, header i{
+    color: #B1B1B1;
+    font-size: larger;
+}
+
+.aside-header{
+    border-right: 1px solid #D6D6D6;
+}
+
+.aside-header > *, header > *{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.text-area{
+    height: 70px;
+    background-color: aquamarine;
+}
+
+.chat{
+    height: calc(100% - 142px);
+    overflow-y: auto;
+}
+
+.notification-reminder{
+    height: 80px;
+    background-color: #8EDAFC;
+}
+
+nav{
+    height: 50px;
+    background-color: blanchedalmond;
+}
+
+.aside-main{
+    height: calc(100% - 202px);
+    overflow-y: auto;
+}
+
+.blue-banner{
+    height: 7%;
+    width: 100vw;
+    background-color: #0F9688;
+    position: absolute;
+    top: 0;
+}
+
+aside img, header img{
+    width: 55px;
+    border-radius: 50%;
+}
+
+.last-online{
+    font-size: x-small;
+    color: #979D9E;
+}
