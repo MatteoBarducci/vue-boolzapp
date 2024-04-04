@@ -11,7 +11,7 @@ GENERAL
 -------------*/
 body{
     font-family: "Montserrat", sans-serif;
-    height: 100vh;
+    max-height: 100vh;
     font-size: 14px;
     background-color: #DBDBD3;
 }
@@ -76,9 +76,9 @@ main{
 }
 
 .chat{
+    background-image: url("https://w0.peakpx.com/wallpaper/744/548/HD-wallpaper-whatsapp-ma-doodle-pattern-thumbnail.jpg");
     height: calc(100% - 142px);
     overflow-y: auto;
-    background-image: url("img/mine.jpg");
 }
 
 .notification-reminder{

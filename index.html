@@ -55,7 +55,7 @@
                     <div class="avatar-list" v-for="contact in contacts">
 
                         <div class="avatar-left">
-                            <img src="img/avatar_1.jpg">
+                            <img :src="contact.avatar">
                             <div>
                                 <div>{{contact.name}}</div>
                                 <div class="last-online">Ultimo messaggio inviato</div>
