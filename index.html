@@ -16,12 +16,14 @@
 </head>
 <body>
     <div id="app">
-
+        <!-- SFONDO BLU -->
         <div class="blue-banner"></div>
 
+        <!-- CONTENITORE GENERALE -->
         <div class="main-container">
+            <!-- COLONNA LATERALE -->
             <aside>
-
+                <!-- HEADER LATERALE -->
                 <div class="aside-header">
                     <div>
                         <img src="img/avatar_io.jpg" alt="">
@@ -33,7 +35,7 @@
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
-
+                <!-- BANNER DI ATTIVAZIONE NOTIFICHE -->
                 <div class="notification-reminder">
                     <div class="white-background-bell">
                         <i class="fa-solid fa-bell-slash"></i>
@@ -43,19 +45,19 @@
                         <div class="notification-text">Attiva le notifiche desktop</div>
                     </div>
                 </div>
-
+                <!-- BARRA DI RICERCA -->
                 <nav>
                     <div class="nav-search-icon">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                     <input type="text" placeholder="Cerca o inizia una nuova chat">
                 </nav>
-
+                <!-- CONTATTI -->
                 <div class="aside-main">
                     <div class="avatar-list" v-for="contact in contacts">
 
-                        <div class="avatar-left">
-                            <img :src="contact.avatar">
+                        <div class="avatar-left" @click="makeActive">
+                            <img :src="'img/avatar' + contact.avatar + '.jpg'">
                             <div>
                                 <div>{{contact.name}}</div>
                                 <div class="last-online">Ultimo messaggio inviato</div>
@@ -64,13 +66,13 @@
                         <div class="avatar-right">
                             <span>12:00</span>
                         </div>
-
                     </div>
                 </div>
             </aside>
 
+            <!-- MAIN -->
             <main>
-
+                <!-- HEADER DEL MAIN -->
                 <header>
                     <div class="header-left">
                         <img src="img/avatar_1.jpg">
@@ -85,20 +87,20 @@
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </header>
+                <!-- CHAT -->
+                <div class="chat">    
+                    <div><span class="sent">Lorem ipsum dolor sit amet.</span></div>
+                    <div><span class="received">Lorem ipsum dolor sit amet.</span></div>
 
-                <div class="chat">
-                
                 </div>
-
+                <!-- AREA PER SCRIVERE I MESSAGGI -->
                 <div class="text-area">
                     <i class="fa-regular fa-face-smile"></i>
                     <input type="text" placeholder="Scrivi un messaggio">
                     <i class="fa-solid fa-microphone"></i>
                 </div>
-
             </main>
         </div>
-
     </div>
 
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>

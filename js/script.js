@@ -5,7 +5,7 @@ createApp({
         return {
             contacts: [{
                 name: 'Michele',
-                avatar: 'img/avatar_1.jpg',
+                avatar: '_1',
                 visible: true,
                 messages: [{
                     date: '10/01/2020 15:30:55',
@@ -26,7 +26,7 @@ createApp({
                 },
                 {
                 name: 'Fabio',
-                avatar: 'img/avatar_2.jpg',
+                avatar: '_2',
                 visible: true,
                 messages: [{
                     date: '20/03/2020 16:30:00',
@@ -43,11 +43,10 @@ createApp({
                     message: 'Mi piacerebbe ma devo andare a fare la spesa.',
                     status: 'received'
                     }
-                    ],
-                },
+                ],},
                 {
                 name: 'Samuele',
-                avatar: 'img/avatar_3.jpg',
+                avatar: '_3',
                 visible: true,
                 messages: [{
                     date: '28/03/2020 10:10:40',
@@ -64,11 +63,10 @@ createApp({
                     message: 'Ah scusa!',
                     status: 'received'
                     }
-                ],
-                },
+                ],},
                 {
                 name: 'Luisa',
-                avatar: 'img/avatar_4.jpg',
+                avatar: '_4',
                 visible: true,
                 messages: [{
                     date: '10/01/2020 15:30:55',
@@ -80,11 +78,13 @@ createApp({
                     message: 'Si, ma preferirei andare al cinema',
                     status: 'received'
                     }
-                ],
-                },
+                ],},
             ],
         };
     },
     methods: {
+        makeActive(){
+            this.classlist.add('active')
+        }
     }
 }).mount('#app');

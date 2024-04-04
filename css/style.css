@@ -79,6 +79,9 @@ main{
     background-image: url("../img/mine.jpg");
     height: calc(100% - 142px);
     overflow-y: auto;
+    padding: 40px 90px;
+    display: flex;
+    flex-direction: column;
 }
 
 .notification-reminder{
@@ -183,4 +186,17 @@ nav input{
     right: 10px;
     font-size: x-small;
     color: #B5B8BA;
+}
+
+.received, .sent{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    flex-grow: 0;
+    margin-right: auto;
+}
+
+.sent{
+    margin-left: auto;
+    background-color: #D5F9BA;
 }
