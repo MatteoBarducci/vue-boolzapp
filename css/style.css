@@ -12,6 +12,14 @@ GENERAL
 body{
     font-family: "Montserrat", sans-serif;
     height: 100vh;
+    font-size: 14px;
+    background-color: #DBDBD3;
+}
+
+.white-background-bell{
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .main-container{
@@ -24,14 +32,13 @@ body{
 
 aside{
     width: 35%;
-    background-color: aqua;
+    background-color: white;
     height: 100%;
 }
 
 main{
     width: 65%;
     height: 100%;
-    background-color: bisque;
 }
 
 .aside-header, header{
@@ -60,22 +67,39 @@ main{
 
 .text-area{
     height: 70px;
-    background-color: aquamarine;
+    background-color: #F3EEEA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
 }
 
 .chat{
     height: calc(100% - 142px);
     overflow-y: auto;
+    background-image: url("img/mine.jpg");
 }
 
 .notification-reminder{
     height: 80px;
     background-color: #8EDAFC;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.notification-reminder i {
+    color: #8EDAFC;
 }
 
 nav{
     height: 50px;
-    background-color: blanchedalmond;
+    background-color: #FAFAFA;
+    padding: 7px;
+    display: flex;
+    align-items: center;
 }
 
 .aside-main{
@@ -99,4 +123,64 @@ aside img, header img{
 .last-online{
     font-size: x-small;
     color: #979D9E;
+}
+
+.notification-text{
+    font-size: x-small;
+    color: #547C8E;
+    text-decoration: underline;
+}
+
+.nav-search-icon{
+    background-color: white;
+    padding: 9px 25px;
+    height: 100%;
+    border: 1px solid #F5F5F5;
+    border-right: none;
+
+}
+nav input{
+    background-color: white;
+    border: 1px solid #F5F5F5;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.text-area input{
+    background-color: white;
+    border: none;
+    border-radius: 6px;
+    height: 100%;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.text-area i{
+    font-size: x-large;
+    color: #5F6A71;
+}
+
+.avatar-list{
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+
+.avatar-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar-right{
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    font-size: x-small;
+    color: #B5B8BA;
 }

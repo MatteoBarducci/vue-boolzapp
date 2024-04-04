@@ -21,6 +21,7 @@
 
         <div class="main-container">
             <aside>
+
                 <div class="aside-header">
                     <div>
                         <img src="img/avatar_io.jpg" alt="">
@@ -32,18 +33,44 @@
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
+
                 <div class="notification-reminder">
-
+                    <div class="white-background-bell">
+                        <i class="fa-solid fa-bell-slash"></i>
+                    </div>
+                    <div>
+                        <div>Ricevi notifiche di nuovi messaggi</div>
+                        <div class="notification-text">Attiva le notifiche desktop</div>
+                    </div>
                 </div>
+
                 <nav>
-
+                    <div class="nav-search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="text" placeholder="Cerca o inizia una nuova chat">
                 </nav>
-                <div class="aside-main">
 
+                <div class="aside-main">
+                    <div class="avatar-list" v-for="contact in contacts">
+
+                        <div class="avatar-left">
+                            <img src="img/avatar_1.jpg">
+                            <div>
+                                <div>{{contact.name}}</div>
+                                <div class="last-online">Ultimo messaggio inviato</div>
+                            </div>
+                        </div>
+                        <div class="avatar-right">
+                            <span>12:00</span>
+                        </div>
+
+                    </div>
                 </div>
             </aside>
 
             <main>
+
                 <header>
                     <div class="header-left">
                         <img src="img/avatar_1.jpg">
@@ -58,12 +85,17 @@
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </header>
+
                 <div class="chat">
-
+                
                 </div>
+
                 <div class="text-area">
-
+                    <i class="fa-regular fa-face-smile"></i>
+                    <input type="text" placeholder="Scrivi un messaggio">
+                    <i class="fa-solid fa-microphone"></i>
                 </div>
+
             </main>
         </div>
 
