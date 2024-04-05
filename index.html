@@ -89,8 +89,9 @@
                 </header>
                 <!-- CHAT -->
                 <div class="chat">    
-                    <div><span class="sent">Lorem ipsum dolor sit amet.</span></div>
-                    <div><span class="received">Lorem ipsum dolor sit amet.</span></div>
+                    <div v-for="message in contacts[activeChat].messages">
+                        <span :class="message.status">{{message.message}}</span>
+                    </div>
 
                 </div>
                 <!-- AREA PER SCRIVERE I MESSAGGI -->
