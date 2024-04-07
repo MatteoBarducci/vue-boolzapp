@@ -187,7 +187,7 @@ nav input{
     padding: 40px 90px;
     display: flex;
     flex-direction: column;
-    gap: 45px;
+    gap: 15px;
 }
 
 .received, .sent{
@@ -205,4 +205,12 @@ nav input{
 .sent{
     margin-left: auto;
     background-color: #D5F9BA;
+}
+
+.active{
+    background-color: #E9EBEB;
+}
+
+.display-none{
+    display: none;
 }

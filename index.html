@@ -54,9 +54,9 @@
                 </nav>
                 <!-- CONTATTI -->
                 <div class="aside-main">
-                    <div class="avatar-list" v-for="contact in contacts">
+                    <div class="avatar-list" v-for="contact, index in contacts" @click="makeActive(index)" :class="{'active': index === activeChat}">
 
-                        <div class="avatar-left" @click="makeActive">
+                        <div class="avatar-left" >
                             <img :src="'img/avatar' + contact.avatar + '.jpg'">
                             <div>
                                 <div>{{contact.name}}</div>
@@ -92,12 +92,13 @@
                     <div v-for="message in contacts[activeChat].messages">
                         <span :class="message.status">{{message.message}}</span>
                     </div>
+                    <span class="sent" :class="{'display-none' : message.length === 0}">{{message}}</span>
 
                 </div>
                 <!-- AREA PER SCRIVERE I MESSAGGI -->
                 <div class="text-area">
                     <i class="fa-regular fa-face-smile"></i>
-                    <input type="text" placeholder="Scrivi un messaggio">
+                    <input type="text" placeholder="Scrivi un messaggio" v-model="message">
                     <i class="fa-solid fa-microphone"></i>
                 </div>
             </main>

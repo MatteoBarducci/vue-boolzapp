@@ -82,11 +82,12 @@ createApp({
                 ],},
             ],
             activeChat: 0,
+            message: '',
         };
         
     },
     methods: {
-        makeActive(index){
+        makeActive: function(index){
 			this.activeChat = index;
 		},
     }
